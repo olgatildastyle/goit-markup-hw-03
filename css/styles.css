@@ -125,7 +125,7 @@ color: #404bbf;
 .hero-section {
 background-color: #2e2f42;
 padding-top: 188px;
-padding-bottom: 292px;
+padding-bottom: 188px;
 }
 
 .hero-title {
@@ -134,7 +134,7 @@ line-height: 1.07;
 letter-spacing: 0.02em;
 text-align: center;
 color: #fff;
-width: 496px;
+max-width: 496px;
 margin-left:  auto;
 margin-right: auto;
 }
@@ -148,9 +148,10 @@ letter-spacing: 0.04em;
 color: #fff;
 cursor: pointer;
 display: block;
+border: none;
 border-radius: 4px;
 box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-width: 169px;
+min-width: 169px;
 height: 56px;
 margin-left: auto;
 margin-right: auto;
@@ -165,7 +166,7 @@ background-color: #404bbf;
 /* benefits */
 .benefits-section {
 padding-top: 120px;
-margin-bottom: 120px;
+padding-bottom: 120px;
 }
 
 .benefits-title {
@@ -174,6 +175,7 @@ font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
 color: #2e2f42;
+margin-bottom: 8px;
 }
 
 .visually-hidden {
@@ -204,8 +206,6 @@ width: calc((100% - 72px) / 4);
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
-margin-top: 8px;
-
 }
 
 /* team */
@@ -213,7 +213,7 @@ margin-top: 8px;
 background: #f4f4fd;
 width: 1128px;
 padding-top: 120px;
-padding-bottom: 72px;
+padding-bottom: 120px;
 }
 
 .team-main-title, .portfolio-main-title {
@@ -271,8 +271,8 @@ text-align: center;
 /* portfolio */
 .portfolio-section {
 width: 1128px;
-margin-top: 120px;
-margin-top: 120px;
+padding-top: 120px;
+padding-bottom: 120px;
 }
 
 .portfolio-list {
@@ -280,6 +280,7 @@ display: flex;
 align-items: center;
 flex-wrap: wrap;
 column-gap: 24px;
+row-gap: 48px;
 }
 
 .portfolio-item {
@@ -289,14 +290,15 @@ border-radius: 5px;
 }
 
 .portfolio-description {
-padding-top: 32px;
-padding-bottom: 32px;
+padding: 32px 16px;
+border: 1px solid #e7e9fc;
 }
 
 /* footer */
 .page-footer {
 background-color: #2e2f42;
-margin-top: 120px;
+padding-top: 100px;
+padding-bottom: 100px;
 }
 
 .text-footer {
@@ -305,4 +307,9 @@ letter-spacing: 0.02em;
 color: #f4f4fd;
 width: 264px;
 padding-bottom: 100px;
+}
+
+.logo .footer-logo {
+display: inline-block;
+margin-bottom: 16px;
 }
